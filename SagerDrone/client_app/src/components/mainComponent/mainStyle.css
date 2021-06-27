@@ -1,0 +1,71 @@
+:root {
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family-monospace) ;
+} 
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.paperContainer{    
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow-y: auto;
+    /* padding:25% 0; */
+
+}
+.paper-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 34px -15px rgb(0 0 0 / 24%);
+    text-align: center;
+}
+
+.form-control {
+    height: 48px;
+    background: rgb(0, 0, 0,0.05);
+    color: rgb(8, 8, 8);
+    font-size: 16px;
+    box-shadow: none;
+    border: 1px solid transparent;
+    padding-left: 20px;
+    padding-right: 20px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.submitButton{
+    width: 100%;
+    height: 48px;
+    font-size: 20px;
+    font-weight: 700;
+    color:#fff
+}
+
+.card,.userName{
+    cursor: pointer;
+}
+.card:hover{
+    box-shadow: 0px 10px 34px -15px rgb(0 0 0 / 24%);
+}
+
